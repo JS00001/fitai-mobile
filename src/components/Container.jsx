@@ -67,7 +67,11 @@ function ContainerSubtitle({ children }) {
 }
 
 function ContainerButton({ children }) {
-    return <Button mv={8}>{children}</Button>;
+    return (
+        <Button mv={8}>
+            {children}
+        </Button>
+    );
 }
 
 const styles = StyleSheet.create({
@@ -78,6 +82,7 @@ const styles = StyleSheet.create({
         borderRadius: 5,
         borderColor: colors.primary300,
         marginVertical: 10,
+        backgroundColor: colors.primary400
     },
     buttonContainer: {
         alignItems: "center",
