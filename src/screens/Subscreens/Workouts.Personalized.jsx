@@ -16,7 +16,7 @@ export default function WorkoutsPersonalized() {
                 <Container>
                     <Container.Title>Chest/Abs</Container.Title>
                     <Container.Subtitle>Average Length - 1 hour 30 minutes</Container.Subtitle>
-                    <Container.Button>Preview</Container.Button>
+                    <Container.Button onPress={() => alert("a")}>Preview</Container.Button>
                     <Container.Button>Save Workout</Container.Button>
                 </Container>
             </View>

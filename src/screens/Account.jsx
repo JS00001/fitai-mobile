@@ -4,13 +4,12 @@ import AccountDetails from '../components/AccountDetails';
 import AccountHeader from '../components/AccountHeader';
 
 import Button from '../components/Button';
-import Container from '../components/Container';
 
 export default function Account() {
     return (
         <ScrollView>
             <View style={styles.container}>
-                <AccountHeader username="Jack_Senyitko" avatar="Test"/>
+                <AccountHeader username="Jack_Senyitko" avatar="Test" verified/>
                 <AccountDetails followers={10} following={100} workouts={100}/>
                 <Button>Edit Profile</Button>
             </View>

@@ -66,9 +66,9 @@ function ContainerSubtitle({ children }) {
     );
 }
 
-function ContainerButton({ children }) {
+function ContainerButton({ children, onPress }) {
     return (
-        <Button mv={8}>
+        <Button mv={8} onPress={onPress}>
             {children}
         </Button>
     );

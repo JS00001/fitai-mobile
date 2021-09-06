@@ -8,7 +8,7 @@ export const colors = {
     primary300: '#363636', // Container Border
     primary400: '#1A1A1A', // Container Background
     primary500: '#111111', // Main Background
-    accent: '#F51F22',
+    accent: '#F6383B',
     accentHover: '#FF6F71',
     accentDisabled: '#FF9697',
     accentTransparent: '',
