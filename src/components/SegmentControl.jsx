@@ -25,7 +25,7 @@ export default function SegmentControl({ values, onChange }) {
                 }}
                 onChange={event => {
                     setSelectedIndex(event.nativeEvent.selectedSegmentIndex)
-                    {onChange}
+                    {onChange(event.nativeEvent.selectedSegmentIndex)}
                 }}
             />
         </View>
