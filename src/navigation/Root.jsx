@@ -7,6 +7,7 @@ import Account from '../screens/Account';
 import Explore from '../screens/Explore';
 import Workouts from '../screens/Workouts';
 import { colors, fontSizes } from '../style/index';
+import WorkoutAdd from '../components/WorkoutAdd';
 
 const Tab = createBottomTabNavigator();
 
@@ -46,7 +47,8 @@ export default function Root() {
                 name="Workouts"
                 component={Workouts}
                 options={{
-                    tabBarIcon: ({color}) => <MaterialCommunityIcons name="weight" size={28} color={color} />
+                    tabBarIcon: ({color}) => <MaterialCommunityIcons name="weight" size={28} color={color} />,
+                    headerRight: () => <WorkoutAdd/>
                 }}
             />
             <Tab.Screen
@@ -62,6 +64,7 @@ export default function Root() {
                 options={{
                     tabBarIcon: ({color}) => <Ionicons name="person" size={28} color={color} />
                 }}
+
             />
         </Tab.Navigator>
     )

@@ -10,13 +10,7 @@ export default function Explore() {
         <>
             <SegmentControl values={['Following', 'Featured']}/>
             <View style={styles.container}>
-                <Container>
-                    <Container.Title>Chest/Abs</Container.Title>
-                    <Container.Subtitle>Workout your chest muscles</Container.Subtitle>
-                    <Container.Subtitle>Your Average Time - 1 hour 30 minutes</Container.Subtitle>
-                    <Container.Button>Modify Workout</Container.Button>
-                    <Container.Button>Modify Workout</Container.Button>
-                </Container>
+
             </View>
         </>
     )

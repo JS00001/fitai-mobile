@@ -32,7 +32,7 @@ function TextComponent({ number, label }) {
         <ListItem containerStyle={styles.textContainer}>
             <ListItem.Content>
                 <ListItem.Title style={styles.width}>
-                    <Header type="h2" color={colors.white} centered>
+                    <Header type="h3" color={colors.white} centered>
                         {number}
                     </Header>
                 </ListItem.Title>
