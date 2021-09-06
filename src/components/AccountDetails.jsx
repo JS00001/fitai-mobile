@@ -1,6 +1,6 @@
 import React from "react";
 import { ListItem } from "react-native-elements";
-import { StyleSheet, View, Text, ScrollView, FlatList } from "react-native";
+import { StyleSheet, View, TouchableOpacity } from "react-native";
 
 import Header from "./Header";
 import { colors } from "../style";
@@ -14,15 +14,15 @@ import { colors } from "../style";
 export default function AccountDetails({ followers, following, workouts }) {
     return (
         <View style={styles.container}>
-            <View style={styles.square}>
+            <TouchableOpacity style={styles.square}>
                 <TextComponent number={followers} label="Followers" />
-            </View>
-            <View style={styles.square}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.square}>
                 <TextComponent number={following} label="Following" />
-            </View>
-            <View style={styles.square}>
+            </TouchableOpacity>
+            <TouchableOpacity style={styles.square}>
                 <TextComponent number={workouts} label="Workouts" />
-            </View>
+            </TouchableOpacity>
         </View>
     );
 }

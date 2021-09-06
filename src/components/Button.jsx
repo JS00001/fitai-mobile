@@ -31,6 +31,8 @@ export default function Button({
 const styles = StyleSheet.create({
     container: {
         padding: 15,
-        width: '90%'
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: 'center'
     }
 })
